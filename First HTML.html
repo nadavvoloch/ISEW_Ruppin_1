@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://moodle.ruppin.ac.il/pluginfile.php/93101/mod_resource/content/1/11.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>First HTML</title>
+
+</head>
+<body>
+<button id="click">Click on me!</button>
+<p id="demo">This is the text before clicking.</p>
+<marquee bgcolor="yellow" behavior="alternate">שלום לכולם כאן יובל המבולבל</marquee>
+<MARQUEE BGCOLOR ="BLUE" BEHAVIOR = "scroll" ><video width="400" controls autoplay>
+  <source src="SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video></MARQUEE>
+<audio  controls >
+  <source src="SampleAudio_0.7mb.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<script>
+alert ("Hello Ruppin!");
+document.write ("Today is Friday!");
+document.getElementById ("click").onclick=function(){
+document.getElementById ("demo").innerHTML = "<h2>Shlomo is going home!</h2>";
+document.getElementById ("demo").style.color="red";
+
+}
+</script>
+<form>
+
+<p contenteditable="true"><label>First name: <font color="red"><sup>*</sup></font><input type="text" placeholder="Enter your first name" required></label></p>
+<p>Last name:<font color="red"><sup>*</sup></font><input type="text" placeholder="Enter your last name" required></p>
+<p>Gender:</p>
+<p>Male<input type="radio" name="gender"></p>
+<p>Female<input type="radio" name="gender"></p>
+<p>Fluid<input type="radio" name="gender" checked=""></p>
+<p>Non-Binary<input type="radio" name="gender" checked=""></p>
+<p>Password<font color="red"><sup>*</sup></font><input type="password" required></p>
+<p>Email<font color="red"><sup>*</sup></font><input type="email" required></p>
+<p>URL<input type="url"></p>
+<p>Tel:<input type="tel"></p>
+<p>Number:<input type="number"></p>
+<p>Range:0<input type="range" min="0" max="100" step="1">100</p>
+<p>Color:<input type="color"></p>
+<p>Date:<input type="date"></p>
+<p>Time:<input type="time"></p>
+<p>Datetime:<input type="datetime"></p>
+<p>Remarks:<textarea rows=2 cols=30 placeholder="Enter text here"></textarea></p>
+<p>Upload your file:<input type="file" name="fileToUpload" id="fileToUpload" multiple></p> 
+<label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+  <option value="chromeeeee">
+</datalist>
+<p><input type="reset" ></p>
+<p><input type="submit"></p>
+
+
+
+</form></body></html>
